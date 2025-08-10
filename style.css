@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    background: purple;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.box div {
+    width: 20px;
+    height: 20px;
+    background: orange;
+    margin: 2px;
+}
+
+/* Flex holatlari */
+.top-left { justify-content: flex-start; align-items: flex-start; }
+.top-right { justify-content: flex-end; align-items: flex-start; }
+.bottom-left { justify-content: flex-start; align-items: flex-end; }
+.center-top { justify-content: center; align-items: flex-start; }
+.center-bottom { justify-content: center; align-items: flex-end; }
+.center { justify-content: center; align-items: center; }
+.column-left { flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+.top-left-wrap { flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; }
